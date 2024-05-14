@@ -1,3 +1,4 @@
+import { Avatar, AvatarDisabled } from "@/components/Avatar";
 import CardContainer from "@/components/CardContainer";
 import Card from "@/components/CardContainer";
 import Image from "next/image";
@@ -18,7 +19,11 @@ export default function Home() {
         <CardContainer items={cardItems.oneElement} />
         <CardContainer items={cardItems.twoElements} />
         <CardContainer items={cardItems.threeElements} />
-
+      </div>
+      <h1>Avatar component</h1>
+      <div className="flex gap-4">
+        <Avatar />
+        <AvatarDisabled />
       </div>
     </div>
   );
